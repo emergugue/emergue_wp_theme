@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 				<?php else : ?>
 
-					<p><?php _e( 'Parece que no he podido encontrar lo que buscar. Sin embargo, utilizar el buscador te puede ayudar...', 'generatepress' ); ?></p>
+					<p><?php _e( 'Parece que no has podido encontrar lo que buscabas. Sin embargo, puedes realizar una búsqueda...', 'generatepress' ); ?></p>
 					<?php get_search_form(); ?>
 
 				<?php endif; ?>
