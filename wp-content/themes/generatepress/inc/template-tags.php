@@ -203,7 +203,7 @@ function generate_posted_on()
 	if ( $author ) :
 		printf( ' <span class="byline">%1$s</span>',
 			sprintf( '<span class="author vcard" itemtype="http://schema.org/Person" itemscope="itemscope" itemprop="author">%1$s <a class="url fn n" href="%2$s" title="%3$s" rel="author" itemprop="url"><span class="author-name" itemprop="name">%4$s</span></a></span>',
-				__( 'by','generatepress'),
+				__( 'por','generatepress'),
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 				esc_attr( sprintf( __( 'View all posts by %s', 'generatepress' ), get_the_author() ) ),
 				esc_html( get_the_author() )
@@ -244,7 +244,7 @@ function generate_entry_meta()
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) && $comments ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'generatepress' ), __( '1 Comment', 'generatepress' ), __( '% Comments', 'generatepress' ) );
+		comments_popup_link( __( 'Leave a comment', 'generatepress' ), __( '1 Comentario', 'generatepress' ), __( '% Comentarios', 'generatepress' ) );
 		echo '</span>';
 	}
 }
@@ -256,7 +256,7 @@ if ( ! function_exists( 'generate_excerpt_more' ) ) :
  */
 add_filter( 'excerpt_more', 'generate_excerpt_more' );
 function generate_excerpt_more( $more ) {
-	return ' ... <a title="' . esc_attr( get_the_title() ) . '" class="read-more" href="'. esc_url( get_permalink( get_the_ID() ) ) . '">' . __('Read more', 'generatepress') . '</a>';
+	return ' ... <a title="' . esc_attr( get_the_title() ) . '" class="read-more" href="'. esc_url( get_permalink( get_the_ID() ) ) . '">' . __('Leer más', 'generatepress') . '</a>';
 }
 endif;
 
@@ -267,7 +267,7 @@ if ( ! function_exists( 'generate_content_more' ) ) :
 add_filter( 'the_content_more_link', 'generate_content_more' );
 function generate_content_more( $more ) {
 	$more_jump = apply_filters( 'generate_more_jump','#more-' . get_the_ID() );
-	return '<p class="read-more-container"><a title="' . esc_attr( get_the_title() ) . '" class="read-more content-read-more" href="'. esc_url( get_permalink( get_the_ID() ) . $more_jump ) . '">' . __('Read more', 'generatepress') . '</a></p>';
+	return '<p class="read-more-container"><a title="' . esc_attr( get_the_title() ) . '" class="read-more content-read-more" href="'. esc_url( get_permalink( get_the_ID() ) . $more_jump ) . '">' . __('Leer más', 'generatepress') . '</a></p>';
 }
 endif;
 
