@@ -244,7 +244,7 @@ function generate_entry_meta()
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) && $comments ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'generatepress' ), __( '1 Comentario', 'generatepress' ), __( '% Comentarios', 'generatepress' ) );
+		comments_popup_link( __( 'Dejar un comentario', 'generatepress' ), __( '1 Comentario', 'generatepress' ), __( '% Comentarios', 'generatepress' ) );
 		echo '</span>';
 	}
 }

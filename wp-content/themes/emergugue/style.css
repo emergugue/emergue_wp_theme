@@ -14,3 +14,7 @@ h1.page-title{
 .widget-title{
     border-bottom: 1px solid #000;
 }
+.posted-on,
+.byline{
+    font-size: 13px;
+}
