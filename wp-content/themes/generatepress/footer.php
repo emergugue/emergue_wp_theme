@@ -110,7 +110,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 	?>
 	<footer class="site-info" itemtype="http://schema.org/WPFooter" itemscope="itemscope">
 		<div class="inside-site-info grid-container grid-parent">
-			<p>Hecho con Wordpress, basado en <a href="https://generatepress.com/" target="_blank">GeneratePress</a> - Colombia, 2016</p>
+			<span>Hecho con Wordpress, basado en <a href="https://generatepress.com/" target="_blank">GeneratePress</a> - Colombia, 2016</span>
 		</div>
 	</footer><!-- .site-info -->
 	<?php do_action( 'generate_after_footer_content' ); ?>
