@@ -7,3 +7,10 @@
  Template:     generatepress
  Version:      0.1
 */
+
+h1.page-title{
+    font-size: 40px;
+}
+.widget-title{
+    border-bottom: 1px solid #000;
+}
