@@ -22,7 +22,7 @@ get_header(); ?>
 				<?php do_action( 'generate_after_entry_header'); ?>
 				<div class="entry-content" itemprop="text">
 					<p>
-						<?php echo apply_filters( 'generate_404_text', __( 'Lo sentio, la página que buscas no está disponible. ¿Qué tal si tratas una búsqueda?', 'generatepress' ) ); ?>
+						<?php echo apply_filters( 'generate_404_text', __( 'Lo siento, la página que buscas no está disponible. ¿Qué tal si tratas una búsqueda?', 'generatepress' ) ); ?>
 					</p>
 					<?php get_search_form(); ?>
 				</div><!-- .entry-content -->
