@@ -34,3 +34,15 @@ h3{
 h4{
     font-size: 20px;
 }
+a{
+    transition: all ease 0.1s;
+}
+.entry-title a{
+    color: #000;
+}
+.entry-title a:visited{
+    color: #000;
+}
+.entry-title a:hover{
+    color: #1e73be;
+}
